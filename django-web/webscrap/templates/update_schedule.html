@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+{% load debug_tags %}
+
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    <div class="form-group" >	
+        <div class="input-group d-flex">
+            <div class='p-2'>
+                <label for="minute">Minute</label>
+                <input type="text" class="form-control" name="minute" id="minute" placeholder="Minute" value="{{data.minute}}"/>
+            </div>
+            <div class='p-2'>
+                <label for="hour">hour</label>
+                <input type="text" class="form-control" name="hour" id="hour" placeholder="hour" value="{{data.hour}}"/>
+            </div>
+            <div class='p-2'>    
+                <label for="day of week">day</label>
+                <input type="text" class="form-control" name="day_of_week" id="day_of_week" placeholder="day_of_week" value="{{data.day_of_week}}"/>
+            </div>
+            <div class='p-2'>    
+                <label for="day of month">day of month</label>
+                <input type="text" class="form-control" name="day_of_month" id="day_of_month" placeholder="day_of_month" value="{{data.day_of_month}}"/>
+            </div>
+            <div class='p-2'>    
+                <label for="week of year">week of year</label>
+                <input type="text" class="form-control" name="month_of_year" id="month_of_year" placeholder="month_of_year" value="{{data.month_of_year}}"/>
+            </div>
+        </div>		
+    </div>
+    
+    <button class="btn btn-primary" type="submit" name="update_schedule">Change Scheduler</button>
+</form>
+{% endblock%}

@@ -1,0 +1,259 @@
+{% extends "base.html" %}
+{% load debug_tags %}
+{% block content %}
+
+
+
+{% for web_datas in table_datas%}
+
+<div class="panel-group joined" id="accordion-test-{{web_datas.0.project_name.project_name}}">
+                
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion-test-{{web_datas.0.project_name.project_name}}" href="#collapseOne-{{web_datas.0.project_name.project_name}}" class="collapsed">
+                                     <h4>{{ web_datas.0.project_name.project_name}}</h4>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne-{{web_datas.0.project_name.project_name}}" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                {% for tables in web_datas%}
+        {% if tables.table_info%}
+        {% if tables.under_arbeid%}
+        <h4> Søknader under arbeid: {{tables.table_info.0.søknader_under_arbeid_}}</h4>
+                <table class='table table-bordered responsive'>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Frist</th>
+                            <th>Program</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for data in tables.under_arbeid%}
+                            <tr>
+                                <td></td>
+                                <td>{{data.frist}}</td>
+                                <td>{{data.program}}</td>
+                            </tr>
+                        {% endfor%}
+                    </tbody>
+                </table>
+            {% endif%}            
+            {% if tables.brev%}
+                <h4> Søknader prosjekter med uåpnede brev: {{tables.table_info.1.søknader_prosjekter_med_uapnede_brev_}}</h4>
+                <table class='table table-bordered responsive'>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Saksbehandler</th>
+                            <th>Brev</th>
+                            <th>Vedlegg</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for data in tables.brev%}
+                            <tr>
+                                <td></td>
+                                <td>{{data.saksbehandler}}</td>
+                                <td>{{data.brev}}</td>
+                                <td>{{data.vedlegg}}</td>
+                            </tr>
+                        {% endfor%}
+                    </tbody>
+                </table>
+            {% endif%}
+            {% if tables.oppgaver%}
+                <h4> Utestående oppgaver på prosjekter: {{tables.table_info.2.utestaende_oppgaver_pa_prosjekter_}}</h4>
+                <table class='table table-bordered responsive'>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Saksbehandler</th>
+                            <th>Brev</th>
+                            <th>Vedlegg</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for data in tables.oppgaver%}
+                            <tr>
+                                <td></td>
+                                <td>{{data.saksbehandler}}</td>
+                                <td>{{data.brev}}</td>
+                                <td>{{data.vedlegg}}</td>
+                            </tr>
+                        {% endfor%}
+                    </tbody>
+                </table>
+            {% endif%}
+        {% elif tables.table_soknader %}
+            <table class='table table-bordered responsive'>
+                <thead>
+                    <tr>
+                        <th>Prosjekt</th>
+                        <th>Tittel</th>
+                        <th>Fase</th>
+                        <th>Min Rolle</th>
+                        <th>Skifte av rolle</th>
+                        <th>Brev</th>
+                        <th>Vedlegg</th>
+                        <th>Apnet</th>
+                        <th>Saksbehandler</th>
+                        <th>Forrespurt rolleskifte</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for data in tables.table_soknader%}
+                        <tr>
+                            <td>{{data.prosjekt}}</td>
+                            <td>{{data.tittel}}</td>
+                            <td>{{data.fase}}</td>
+                            <td>{{data.min_rolle}}</td>
+                            <td></td>
+                            <td>{{data.brev}}</td>
+                            <td>{{data.vedlegg}}</td>
+                            <td>{{data.pnet}}</td>
+                            <td>{{data.saksbehandler}}</td>
+                            <td>{{data.forespurt_rolleskifte}}</td>
+                        </tr>
+                    {% endfor%}
+                </tbody>
+            </table>
+        {% elif tables.table_begin%}
+            <table class="table table-bordered responsive">
+                <thead>
+                    <tr>
+                        <th>Referanse</th>
+                        <th>Revidert</th>
+                        <th>Kortnavn</th>
+                        <th>Variant</th>
+                        <th>Program/Aktivitate</th>
+                        <th>Soknadsfrist</th>
+                        <th>Innsendt</th>
+                        <th>Sist Endret</th>
+                        <th>PDF</th>
+                        <th>Slett</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for data in tables.table_begin %}
+                        <tr>    
+                            <td>{{data.referanse}}</td>
+                            <td>{{data.revidert}}</td>
+                            <td>{{data.kortnavn}}</td>
+                            <td>{{data.søknadstype_variant}}</td>
+                            <td>{{data.program__aktivitet}}</td>
+                            <td>{{data.søknadsfrist}}</td>
+                            <td>{{data.innsendt}}</td>
+                            <td>{{data.sist_endret}}</td>
+                            <td>{{data.innsendt}}</td>
+                            <td>{{data.slett}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% elif tables.table_prosjekter%}
+            <table class="table table-bordered responsive">
+                <thead>
+                    <tr>
+                        <th>Prosjekt</th>
+                        <th>Tittel</th>
+                        <th>Fase</th>
+                        <th>Min Rolle</th>
+                        <th>Skifte av rolle</th>
+                        <th>Saksbehandler</th>
+                        <th>Forrespurt rolleskifte</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for data in tables.table_prosjekter %}
+                        <tr>    
+                            <td>{{data.prosjekt}}</td>
+                            <td>{{data.tittel}}</td>
+                            <td>{{data.fase}}</td>
+                            <td>{{data.min_rolle}}</td>
+                            <td></td>
+                            <td>{{data.saksbehandler}}</td>
+                            <td>{{data.forespurt_rolleskifte}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% elif tables.table_brev%}
+            <table class="table table-bordered responsive">
+                <thead>
+                    <tr>
+                        <th>Brev</th>
+                        <th>Apnet</th>
+                        <th>Emne</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for data in tables.table_brev %}
+                        <tr>    
+                            <td>{{data.brev}}</td>
+                            <td>{{data.pnet}}</td>
+                            <td>{{data.emne}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <table class="table table-bordered responsive">
+                <thead>
+                    <tr>
+                        <th>Rapporthistorikk</th>
+                        <th>Frist</th>
+                        <th>Innlevert</th>
+                        <th>PDF</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for data in tables.table_historikk %}
+                        <tr>    
+                            <td>{{data.rapporthistorikk}}</td>
+                            <td>{{data.frist}}</td>
+                            <td>{{data.innlevert}}</td>
+                            <td>{{data.pdf}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <table class="table table-bordered responsive">
+                <thead>
+                    <tr>
+                        <th>Prosjekt</th>
+                        <th>Tittel</th>
+                        <th>Fase</th>
+                        <th>Min Rolle</th>
+                        <th>Skifte av rolle</th>
+                        <th>Saksbehandler</th>
+                        <th>Forrespurt rolleskifte</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for data in tables.table_rapporter %}
+                        <tr>    
+                            <td>{{data.prosjekt}}</td>
+                            <td>{{data.tittel}}</td>
+                            <td>{{data.fase}}</td>
+                            <td>{{data.min_rolle}}</td>
+                            <td></td>
+                            <td>{{data.saksbehandler}}</td>
+                            <td>{{data.forespurt_rolleskifte}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif%}
+    {% endfor%}
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+{% endfor%}
+            
+{% endblock content %}
