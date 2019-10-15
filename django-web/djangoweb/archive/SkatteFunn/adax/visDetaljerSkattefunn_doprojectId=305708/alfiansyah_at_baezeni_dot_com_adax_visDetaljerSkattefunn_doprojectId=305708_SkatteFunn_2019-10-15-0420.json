@@ -1,0 +1,22 @@
+{
+    "url": "/home/alfi/Documents/projects/ti-webscraping/django-web/djangoweb/test-data/adax/adax_mittNettstedWeb_portlets_prosjekt_visDetaljerSkattefunn.doprojectId=305708_.html",
+    "url_name": "visDetaljerSkattefunn_doprojectId=305708",
+    "title": "SkatteFunn",
+    "project": "adax",
+    "username": "alfiansyah@baezeni.com",
+    "header": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/76.0.3809.100 Chrome/76.0.3809.100 Safari/537.36"
+    },
+    "timestamp": "2019-10-15 04:20",
+    "data_table": [
+        {
+            "prosjekt": "305708",
+            "tittel": "Smartere oppvarming gjennom prediksjon av bruksmønster",
+            "fase": "AVSLAGSBREV SENDT",
+            "min_rolle": "Søker",
+            "skifte_av_rolle": "<!--// map tagId to \"real name\"if (netui_tagIdNameMap == null)var netui_tagIdNameMap = new Object();netui_tagIdNameMap.inline_rolleskifteknapp=\"actionOverride:endringIRollerForSkattefunnprosjekt?prosjektnr=305708\"// lookup by tagId to \"real name\"function lookupNameByTagId(id, tag){var idScope = lookupIdScope(tag,\"_\");if (idScope == \"\")return netui_tagIdNameMap[id];elsereturn netui_tagIdNameMap[idScope + \"__\" + id];}-->",
+            "saksbehandler": "Anders Anker-Rasch",
+            "forespurt_rolleskifte": ""
+        }
+    ]
+}

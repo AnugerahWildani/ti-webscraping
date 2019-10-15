@@ -1,0 +1,25 @@
+{
+    "url": "/home/alfi/Documents/projects/ti-webscraping/django-web/djangoweb/test-data/cavai/cavai_mittNettstedWeb_portlets_soknad_begin.do_.html",
+    "url_name": "begin_do",
+    "title": "SkatteFunn",
+    "project": "cavai",
+    "username": "alfiansyah@baezeni.com",
+    "header": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/76.0.3809.100 Chrome/76.0.3809.100 Safari/537.36"
+    },
+    "timestamp": "2019-10-15 04:20",
+    "data_table": [
+        {
+            "referanse": "ES650138",
+            "revidert": "",
+            "kortnavn": "Toveis annonseteknologi",
+            "søknadstype_variant": "Skattefunn",
+            "program__aktivitet": "SKATTEFUNN",
+            "søknadsfrist": " ",
+            "innsendt": "20190901 23:32",
+            "sist_endret": " ",
+            "   pdf    ": "",
+            "slett": " "
+        }
+    ]
+}

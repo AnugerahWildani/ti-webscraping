@@ -1,0 +1,12 @@
+{
+    "url": "/home/alfi/Documents/projects/ti-webscraping/django-web/djangoweb/test-data/bioner/bioner_mittNettstedWeb_portlets_prosjekt_soknader.do_.html",
+    "url_name": "soknader_do",
+    "title": "SkatteFunn",
+    "project": "bioner",
+    "username": "thowwafi@gmail.com",
+    "header": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/76.0.3809.100 Chrome/76.0.3809.100 Safari/537.36"
+    },
+    "timestamp": "2019-10-15 04:20",
+    "data_table": []
+}

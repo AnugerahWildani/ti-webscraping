@@ -1,0 +1,45 @@
+{
+    "url": "/home/alfi/Documents/projects/ti-webscraping/django-web/djangoweb/test-data/memory/memory_mittNettstedWeb_portlets_prosjekt_visDetaljerSkattefunn.doprojectId=269913_.html",
+    "url_name": "visDetaljerSkattefunn_doprojectId=269913",
+    "title": "SkatteFunn",
+    "project": "memory",
+    "username": "alfiansyah@baezeni.com",
+    "header": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/76.0.3809.100 Chrome/76.0.3809.100 Safari/537.36"
+    },
+    "timestamp": "2019-10-15 04:37",
+    "prosjektbrev": [
+        {
+            "brev": "",
+            "ã…pnet": " ",
+            "emne": "Godkjenning av prosjekt"
+        }
+    ],
+    "prosjektrapporter": [],
+    "historikk": [
+        {
+            "rapporthistorikk": "Sluttrapport-1 for 2018",
+            "frist": "20190423",
+            "innlevert": "20190411",
+            "pdf": ""
+        },
+        {
+            "rapporthistorikk": "Sluttrapport for 2018",
+            "frist": "20190301",
+            "innlevert": "20190221",
+            "pdf": ""
+        },
+        {
+            "rapporthistorikk": "Ã…rsrapport for 2017",
+            "frist": "20180301",
+            "innlevert": "20180221",
+            "pdf": ""
+        },
+        {
+            "rapporthistorikk": "Ã…rsrapport for 2016",
+            "frist": "20170301",
+            "innlevert": "20170228",
+            "pdf": ""
+        }
+    ]
+}

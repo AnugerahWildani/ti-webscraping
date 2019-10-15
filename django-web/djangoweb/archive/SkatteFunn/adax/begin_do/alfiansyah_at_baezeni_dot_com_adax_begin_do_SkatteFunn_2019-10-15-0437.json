@@ -1,0 +1,37 @@
+{
+    "url": "/home/alfi/Documents/projects/ti-webscraping/django-web/djangoweb/test-data/adax/adax_mittNettstedWeb_portlets_soknad_begin.do_.html",
+    "url_name": "begin_do",
+    "title": "SkatteFunn",
+    "project": "adax",
+    "username": "alfiansyah@baezeni.com",
+    "header": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/76.0.3809.100 Chrome/76.0.3809.100 Safari/537.36"
+    },
+    "timestamp": "2019-10-15 04:37",
+    "data_table": [
+        {
+            "referanse": "ES648769",
+            "revidert": "",
+            "kortnavn": "Ecoline 2",
+            "søknadstype_variant": "Skattefunn",
+            "program__aktivitet": "SKATTEFUNN",
+            "søknadsfrist": " ",
+            "innsendt": "20190823 14:56",
+            "sist_endret": " ",
+            "   pdf    ": "",
+            "slett": " "
+        },
+        {
+            "referanse": "ES553355",
+            "revidert": "",
+            "kortnavn": "Ecoline",
+            "søknadstype_variant": "Skattefunn",
+            "program__aktivitet": "SKATTEFUNN",
+            "søknadsfrist": " ",
+            "innsendt": "",
+            "sist_endret": "20190822 15:35",
+            "   pdf    ": "",
+            "slett": ""
+        }
+    ]
+}

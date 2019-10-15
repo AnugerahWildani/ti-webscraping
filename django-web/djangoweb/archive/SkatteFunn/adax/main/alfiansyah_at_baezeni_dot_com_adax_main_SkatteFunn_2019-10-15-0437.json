@@ -1,0 +1,37 @@
+{
+    "url": "/home/alfi/Documents/projects/ti-webscraping/django-web/djangoweb/test-data/adax/adax_nomittNettstedWeb_.html",
+    "url_name": "main",
+    "title": "SkatteFunn",
+    "project": "adax",
+    "username": "alfiansyah@baezeni.com",
+    "header": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/76.0.3809.100 Chrome/76.0.3809.100 Safari/537.36"
+    },
+    "timestamp": "2019-10-15 04:37",
+    "info": [
+        {
+            "søknader_under_arbeid_": "1"
+        },
+        {
+            "søknader_prosjekter_med_uapnede_brev_": "1"
+        },
+        {
+            "utestaende_oppgaver_pa_prosjekter_": "0"
+        }
+    ],
+    "under_arbeid": [
+        {
+            " ": " Ecoline",
+            "frist": "",
+            "program": "SKATTEFUNN"
+        }
+    ],
+    "brev": [
+        {
+            " ": "305708",
+            "saksbehandler": "Anders Anker-Rasch",
+            "brev": "Se brev på prosjektsiden",
+            "vedlegg": ""
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "url": "/home/alfi/Documents/projects/ti-webscraping/django-web/djangoweb/test-data/generic/generic_mittNettstedWeb_portlets_soknad_begin.do_.html",
+    "url_name": "begin_do",
+    "title": "SkatteFunn",
+    "project": "generic",
+    "username": "thowwafi@gmail.com",
+    "header": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/76.0.3809.100 Chrome/76.0.3809.100 Safari/537.36"
+    },
+    "timestamp": "2019-10-15 04:37",
+    "data_table": [
+        {
+            "referanse": "ES648995",
+            "revidert": "",
+            "kortnavn": "Logistikk 2019",
+            "søknadstype_variant": "Skattefunn",
+            "program__aktivitet": "SKATTEFUNN",
+            "søknadsfrist": " ",
+            "innsendt": "20190831 23:01",
+            "sist_endret": " ",
+            "   pdf    ": "",
+            "slett": " "
+        },
+        {
+            "referanse": "ES636255",
+            "revidert": "",
+            "kortnavn": "Maskinlæring og logistikk",
+            "søknadstype_variant": "Skattefunn",
+            "program__aktivitet": "SKATTEFUNN",
+            "søknadsfrist": " ",
+            "innsendt": "20190211 09:34",
+            "sist_endret": " ",
+            "   pdf    ": "",
+            "slett": " "
+        },
+        {
+            "referanse": "ES630664",
+            "revidert": "",
+            "kortnavn": "Integrert systemløsning innen logistikk",
+            "søknadstype_variant": "Skattefunn",
+            "program__aktivitet": "SKATTEFUNN",
+            "søknadsfrist": " ",
+            "innsendt": "20180929 09:16",
+            "sist_endret": " ",
+            "   pdf    ": "",
+            "slett": " "
+        }
+    ]
+}

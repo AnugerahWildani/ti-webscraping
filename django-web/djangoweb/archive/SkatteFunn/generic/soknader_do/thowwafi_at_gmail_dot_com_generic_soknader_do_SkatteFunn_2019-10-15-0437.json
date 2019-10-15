@@ -1,0 +1,25 @@
+{
+    "url": "/home/alfi/Documents/projects/ti-webscraping/django-web/djangoweb/test-data/generic/generic_mittNettstedWeb_portlets_prosjekt_soknader.do_.html",
+    "url_name": "soknader_do",
+    "title": "SkatteFunn",
+    "project": "generic",
+    "username": "thowwafi@gmail.com",
+    "header": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/76.0.3809.100 Chrome/76.0.3809.100 Safari/537.36"
+    },
+    "timestamp": "2019-10-15 04:37",
+    "data_table": [
+        {
+            "prosjekt": "307995",
+            "tittel": "Optimalisering logistikk og vareflyt gjennom kunstig intelligens",
+            "fase": "SØ˜KNAD SENDT",
+            "min_rolle": "Søker",
+            "skifte_av_rolle": "<!--// map tagId to \"real name\"if (netui_tagIdNameMap == null)var netui_tagIdNameMap = new Object();netui_tagIdNameMap.inline_rolleskifteknapp=\"actionOverride:endringIRollerForSkattefunnprosjekt?prosjektnr=307995\"// lookup by tagId to \"real name\"function lookupNameByTagId(id, tag){var idScope = lookupIdScope(tag,\"_\");if (idScope == \"\")return netui_tagIdNameMap[id];elsereturn netui_tagIdNameMap[idScope + \"__\" + id];}-->",
+            "brev": " ",
+            "vedlegg": " ",
+            "…pnet": " ",
+            "saksbehandler": "Aud Alming",
+            "forespurt_rolleskifte": ""
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "url": "/home/alfi/Documents/projects/ti-webscraping/django-web/djangoweb/test-data/generic/generic_mittNettstedWeb_portlets_prosjekt_prosjekter.do_.html",
+    "url_name": "prosjekter_do",
+    "title": "SkatteFunn",
+    "project": "generic",
+    "username": "thowwafi@gmail.com",
+    "header": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/76.0.3809.100 Chrome/76.0.3809.100 Safari/537.36"
+    },
+    "timestamp": "2019-10-15 04:37",
+    "data_table": [
+        {
+            "prosjekt": "299012",
+            "tittel": "Maskinlæring og logistikk",
+            "fase": "PROSJEKT AVSLUTTET",
+            "min_rolle": "Søker",
+            "skifte_av_rolle": "<!--// map tagId to \"real name\"if (netui_tagIdNameMap == null)var netui_tagIdNameMap = new Object();netui_tagIdNameMap.inline_rolleskifteknapp=\"actionOverride:endringIRollerForSkattefunnprosjekt?prosjektnr=299012\"// lookup by tagId to \"real name\"function lookupNameByTagId(id, tag){var idScope = lookupIdScope(tag,\"_\");if (idScope == \"\")return netui_tagIdNameMap[id];elsereturn netui_tagIdNameMap[idScope + \"__\" + id];}-->",
+            "saksbehandler": "Aud Alming",
+            "forespurt_rolleskifte": ""
+        },
+        {
+            "prosjekt": "295556",
+            "tittel": "Integrert selv lærende systemløsning for logistikk - AI modul",
+            "fase": "KLAGE VURDERT ADMINISTRATIVT",
+            "min_rolle": "Søker",
+            "skifte_av_rolle": "<!--netui_tagIdNameMap.inline_rolleskifteknapp=\"actionOverride:endringIRollerForSkattefunnprosjekt?prosjektnr=295556\"-->",
+            "saksbehandler": "Aud Alming",
+            "forespurt_rolleskifte": ""
+        }
+    ]
+}

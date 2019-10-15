@@ -1,0 +1,19 @@
+{
+    "url": "/home/alfi/Documents/projects/ti-webscraping/django-web/djangoweb/test-data/cavai/cavai_nomittNettstedWeb_.html",
+    "url_name": "main",
+    "title": "SkatteFunn",
+    "project": "cavai",
+    "username": "alfiansyah@baezeni.com",
+    "header": {
+        "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/76.0.3809.100 Chrome/76.0.3809.100 Safari/537.36"
+    },
+    "timestamp": "2019-10-15 04:37",
+    "info": [
+        {
+            "søknader_under_arbeid_": "0"
+        },
+        {
+            "søknader_prosjekter_med_uapnede_brev_": "0"
+        }
+    ]
+}
