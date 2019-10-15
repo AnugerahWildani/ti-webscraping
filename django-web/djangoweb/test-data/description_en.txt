@@ -1,0 +1,28 @@
+See attached file. I have replaced / with _ after https://app.forskningsradet.no/.
+ 
+
+For Cavai, we typically have project 308653 posted. What is interesting here is "Fase" and "Saksbehandler" under the "Søknadsstatus" tab (my WebsiteWeb / portlets / project / soknader.do), but you have to check all three tabs.
+
+ 
+
+Not all tabs are available for Bioner. "Application status" is not in the menu, but is available. As you can see from the attached html files, it is empty. It is found under "eSøknader" (mySiteWeb / portlets / soknad / begin.do), but here it is without application number. This usually changes after driving at 9pm and until then the status is "ukjent" (unless you find info about it elsewhere in the html files - I haven't checked that).
+
+ 
+
+For Adax, you will see on the entry page (mySiteWeb /) that project 305708 is listed and you will get a link to project page (mySiteWeb / portlets / project / showDetailsSkattefunn.do? ProjectId = 305708). Here you will find another layout. What is interesting here is "Fase" and "Saksbehandler" again, but there is also a link to a new document under "brev". Here we must both be notified of change in status and preferably get the pdf to which it is linked. The same thing says "Approval letter sent" on the same page. The project number is at the top (305708).
+
+ 
+
+For Memory, you will see that more than one project is listed, but then you need to check the status of those listed in the config. There is a project inside with approval, project 304184 (mySiteWeb / portlets / project / showDetailsTax found.do? ProjectId = 304184). Here it is interesting with the same as for rejection, also with possible new pdf's. For project 269913, there is a typical layout for annual and final reports submitted. Again, there will be a new pdf here we will have mail about it - both if there is a new letter in the table called "Rapporthistorikk" and if the status changes and there will be a new pdf under "Prosjektbrev". The latter is critical. What lies below history is just nice to have.
+
+ 
+
+I would like you to start with my WebsiteWeb / portlets / project / viewDetailsTaxes.do? ProjectId = xxxxxx to see if the project is there. If it does, you should get all the necessary information from that page, if I'm not mistaken. If this page does not exist, you can look at the other pages. Regardless, I expect you to get a good overview of the html files I have attached.
+
+ 
+
+When it comes to status and how often to check it is fine if you collect the different statuses you find and dynamically place them on a page where we can specify how often they should be checked based on status. If we have "Godkjenningsbrev sendt" we only need to check them once in a while, e.g. every three months and 02.01.xx. We should be able to make changes on our own.
+
+ 
+
+Do you need anything more from me?

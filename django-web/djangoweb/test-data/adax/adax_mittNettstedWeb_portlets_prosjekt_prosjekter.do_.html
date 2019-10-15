@@ -1,0 +1,314 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+	<title>Norges forskningsråd</title>
+	<link href="/mittNettstedWeb/resources/css/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<link href="/mittNettstedWeb/resources/css/nfrdatepickerExtra.css" rel="stylesheet" type="text/css" />
+	<link href="/mittNettstedWeb/resources/css/main.css" rel="stylesheet" type="text/css" />
+	<link href="/mittNettstedWeb/resources/css/footer.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/mittNettstedWeb/resources/css/header.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/mittNettstedWeb/resources/css/skattefunn.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="/mittNettstedWeb/common/images/favicon.ico" type="image/x-icon" />
+	<script type="text/javascript" src="/mittNettstedWeb/resources/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="/mittNettstedWeb/resources/js/jquery-migrate-3.0.0.min.js"></script>
+	<script type="text/javascript" src="/mittNettstedWeb/resources/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/mittNettstedWeb/resources/js/common.js"></script>
+	<script type="text/javascript" src="/mittNettstedWeb/resources/js/driftsmelding.js"></script>
+	<script type="text/javascript" src="/mittNettstedWeb/resources/js/nfr_151006.js"></script>
+</head>
+
+<body>
+	<table class="table_layout" cellpadding="0" cellspacing="0" border="0">
+		<tbody>
+			<tr>
+				<td class="td_header" colspan="3">
+					<div id="header">
+						<noscript>
+							<div class="noscript">Det kan se ut som om JavaScript er deaktivert i din nettleser. JavaScript må være aktivert for at Mitt Nettsted skal fungere.</div>
+						</noscript>
+						<div id="driftsmelding" style="display:none">Ingen driftsmelding er lagt ut for øyeblikket.</div>
+						<div class="utility_menu">
+<span class="right_align"><a href="/mittNettstedWeb/" class="smalllinksmall">Mitt nettsted</a> | <a href="/mittNettstedWeb/portlets/prosjekt/prosjektoversikt.jsp?setLocale=en" class="smalllinksmall">English</a></span>
+							<a href="/mittNettstedWeb/common/security/logout.jsp" class="smalllinksmall">Logg ut Roger Dalen &#x28;rdalen&#x40;adax.no)</a> |
+<a title="" href="mailto:esoknad@forskningsradet.no">Kontakt</a>
+						</div>
+						<div class="logoline">
+<span class="align_left"><a href="https://www.forskningsradet.no"><img class="logo" src="/mittNettstedWeb/common/images/logo-hvit.png"></a></span>
+						</div>
+						<div class="clear_both"></div>
+						<div class="mainmenu">
+							<ul>
+								<li><a class="no_menuelement" href="/mittNettstedWeb/portlets/soknad/begin.do"><span class="linkpadding">eSøknader</span></a>
+								</li>
+								<li><a class="no_menuelement_sel" href="/mittNettstedWeb/portlets/prosjekt/prosjekter.do"><span class="linkpadding">Prosjekter / Rapporter</span></a>
+								</li>
+								<li><a class="no_menuelement" href="/mittNettstedWeb/portlets/endreBruker/begin.do"><span class="linkpadding">Min profil</span></a>
+								</li>
+								<li><a class="no_menuelement" href="/mittNettstedWeb/portlets/rolleadministrasjon/begin.do"><span class="linkpadding">Rolleadministrasjon</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="td_alert">
+					<div id="criticalUserInfo">
+						<h5 class="bold"><span id="criticalUserInfoText">
+Automatisk utlogging kl. 20:50.
+</span></h5>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="td_content">
+					<table class="portletcontainer">
+						<tr>
+							<td class="single">
+								<table class="bea-portal-layout-flow" cellspacing="0">
+									<tr>
+										<td class="bea-portal-layout-placeholder-container" width="100%">
+											<table width="100%" border="0" cellspacing="0" cellpadding="0" class="subElement">
+												<!-- start errorInc.jsp -->
+												<!-- slutt av errorInc.jsp -->
+											</table>
+											<form action="/mittNettstedWeb/portlets/prosjekt/endringIProsjektledelse.do" method="post">
+												<table class="portletcontent" width="100%">
+													<tr>
+														<td>
+															<h1 class="heading1">
+Prosjekter/Rapporter
+</h1>
+															<div class="disclamer">Informasjon om et prosjekt vil bli fjernet fra "Mitt nettsted" 3 måneder etter at sluttrapport er levert, forutsatt at sluttrapporten er godkjent.</div>
+															<br/>
+														</td>
+													</tr>
+													<tr style="display: none; " id="rolleskifteknapp_1">
+														<td>
+															<input type="submit" id="rolleskifteknapp" class="esoknadbutton action" value="Skift rolle" style="esoknadbutton action">
+															<script language="JavaScript" type="text/JavaScript">
+																<!--
+																// lookup by tagId to "real id"
+																function lookupIdByTagId(id, tag)
+																{
+																var idScope = lookupIdScope(tag,".");
+																return (idScope == "") ? id : idScope + id;
+																}
+																
+																//Non-Legacy lookup method creating a fully qualified scope id
+																function lookupIdScope(tag,sep)
+																{
+																var val = "";
+																if (sep == null) sep = "";
+																while (tag != null && tag.getAttribute != null) {
+																try {
+																var attrVal = tag.getAttribute("netui:idScope");
+																} catch (e) { /* ignore, in IE6 calling on a table results in an exception */ }
+																if (attrVal != null)
+																val = attrVal + sep + val;
+																tag = tag.parentNode;
+																}
+																return val;
+																}
+																
+																-->
+															</script>
+														</td>
+													</tr>
+													<tr>
+														<td valign="top">
+															<table cellpadding="0" cellspacing="0" width="100%">
+																<!--HEADING-->
+																<tr>
+																	<td class="worklist1">
+																		<table class="innerportletcontent">
+																			<tr>
+																				<td>
+																					<h5 class="bold">Prosjekt</h5>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td class="worklist1">
+																		<table class="innerportletcontent">
+																			<tr>
+																				<td>
+																					<h5 class="bold">Tittel</h5>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td class="worklist1">
+																		<table class="innerportletcontent">
+																			<tr>
+																				<td>
+																					<h5 class="bold">Fase</h5>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td class="worklist1">
+																		<table class="innerportletcontent">
+																			<tr>
+																				<td>
+																					<h5 class="bold">Min rolle</h5>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td class="worklist1">
+																		<table class="innerportletcontent">
+																			<tr>
+																				<td>
+																					<h5 class="bold">Skifte av rolle</h5>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td class="worklist1">
+																		<table class="innerportletcontent">
+																			<tr>
+																				<td>
+																					<h5 class="bold">Saksbehandler</h5>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td class="worklist1">
+																		<table class="innerportletcontent">
+																			<tr>
+																				<td>
+																					<h5 class="bold">Forespurt rolleskifte</h5>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<!--CONTENT-->
+																<tr>
+																	<td class="worklist2" width="20px">
+																		<table class="innerportletcontent">
+																			<tr>
+																				<td class="tableelement">305708</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td class="worklist2" width="250px">
+																		<table class="innerportletcontent">
+																			<tr>
+																				<td class="tableelement">
+<a href="/mittNettstedWeb/portlets/prosjekt/visDetaljerSkattefunn.do?projectId=305708">Smartere oppvarming gjennom prediksjon av bruksm&oslash;nster</a>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td class="worklist2" width="30px">
+																		<table class="innerportletcontent">
+																			<tr>
+																				<td class="tableelement">AVSLAGSBREV SENDT</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td class="worklist2" width="50px">
+																		<table class="innerportletcontent">
+																			<tr>
+																				<td class="tableelement">
+<span class="smallgrey">Søker</span>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td class="worklist2" width="20px">
+																		<table class="innerportletcontent">
+																			<tr>
+																				<td>
+																					<input type="submit" name="actionOverride:endringIRollerForSkattefunnprosjekt?prosjektnr=305708" id="inline_rolleskifteknapp" class="esoknadbutton" value="Bytt søker" style="esoknadbutton">
+																					<script language="JavaScript" type="text/JavaScript">
+																						<!--
+																						
+																						// map tagId to "real name"
+																						if (netui_tagIdNameMap == null)
+																						var netui_tagIdNameMap = new Object();
+																						netui_tagIdNameMap.inline_rolleskifteknapp="actionOverride:endringIRollerForSkattefunnprosjekt?prosjektnr=305708"
+																						// lookup by tagId to "real name"
+																						function lookupNameByTagId(id, tag)
+																						{
+																						var idScope = lookupIdScope(tag,"_");
+																						if (idScope == "")
+																						return netui_tagIdNameMap[id];
+																						else
+																						return netui_tagIdNameMap[idScope + "__" + id];
+																						}
+																						
+																						-->
+																					</script>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td class="worklist2" width="80px">
+																		<table class="innerportletcontent">
+																			<tr>
+																				<td class="tableelement"><a href="mailto:anan@forskningsradet.no" title="Skriv e-post til saksbehandler">Anders Anker-Rasch</a>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																	<td class="worklist2" width="20px">
+																		<table class="innerportletcontent">
+																			<tr>
+																				<td></td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+													<tr style="display: none;" id="rolleskifteknapp_2">
+														<td>
+															<input type="submit" id="rolleskifteknapp_2" class="esoknadbutton action" value="Skift rolle" style="esoknadbutton action">
+															<script language="JavaScript" type="text/JavaScript">
+																<!--
+																-->
+															</script>
+														</td>
+													</tr>
+												</table>
+											</form>
+											<!-- slutt prosjektoversikt.jsp -->
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="td_footer">
+					<div class="PageFooter">
+						<div class="row">
+<span class="col1">
+<p class="info"><b>Norges forskningsr&aring;d</b></p>
+<p class="info">Postboks 564, 1327 Lysaker Oslo</p>
+<p class="info">Bes&oslash;ksadresse: Drammensveien 288, 0283 Oslo</p>
+</span>
+							<span class="col2">
+<p class="info"><b>Telefon:</b> 22 03 70 00</p>
+<p class="info"><b>Telefaks:</b> 22 03 70 01</p>
+<p class="info"><b>E-post:</b> <a href="mailto:post@forskningsradet.no" class="smalllinkfooter">post@forskningsradet.no</a></p>
+</span>
+						</div>
+						<!-- end class row -->
+						<div class="tracefooter"></div>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+
+</html>

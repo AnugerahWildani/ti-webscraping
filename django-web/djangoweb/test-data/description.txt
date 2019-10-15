@@ -1,0 +1,29 @@
+Se vedlagt rar-fil. Jeg har erstattet / med _ etter https://app.forskningsradet.no/.
+
+ 
+
+For Cavai vil vi typisk ha lagt inn prosjekt 308653. Det som er interessant her er da «Fase» og «Saksbehandler» under fanen «Søknadsstatus» (mittNettstedWeb/portlets/prosjekt/soknader.do), men man må sjekke alle tre fanene.
+
+ 
+
+For Bioner er ikke alle fanene tilgjengelige. «Søknadsstatus» ligger ikke i menyen, men er tilgjengelig. Som du ser fra vedlagte html-filer er den tom. Det er under «eSøknader» man finner den (mittNettstedWeb/portlets/soknad/begin.do), men her ligger den uten søknadsnummer. Dette endrer seg som regel etter kjøring kl 21 og frem til da er status «ukjent» (med mindre dere finner info om den andre steder i html-filene – det har jeg ikke sjekket).
+
+ 
+
+For Adax vil dere se på inngangssiden (mittNettstedWeb/) at prosjekt 305708 er listet opp og dere får lenke til prosjektside (mittNettstedWeb/portlets/prosjekt/visDetaljerSkattefunn.do?projectId=305708). Her finner dere et annet oppsett. Det som er interessant her er «Fase» og «Saksbehandler» igjen, men det ligger også lenke til et nytt dokument under «brev». Her må vi både varsles om endring i status og helst få oversendt pdf-en det er lenket til. Det samme om det står «Godkjenningsbrev sendt» på samme siden. Prosjektnummeret står øverst (305708).
+
+ 
+
+For Memory vil dere se at det er listet opp mer enn ett prosjekt, men da må dere sjekke status på dem som er listet opp i config-en. Det er et prosjekt inne med godkjenning, prosjekt 304184 (mittNettstedWeb/portlets/prosjekt/visDetaljerSkattefunn.do?projectId=304184). Her er det interessant med det samme som for avslag, også med eventuelt nye pdf-er. For prosjekt 269913 er det et typisk oppsett for års- og sluttrapporter som sendes inn. Igjen, kommer det en ny pdf her vil vi ha mail om det – både om det kommer nytt brev i tabellen som heter «Rapporthistorikk» og dersom status endres og det kommer ny pdf under «Prosjektbrev». Sistnevnte er kritisk. Det som ligger under historikk er bare nice to have.
+
+ 
+
+Jeg vil tro at dere kan begynne med mittNettstedWeb/portlets/prosjekt/visDetaljerSkattefunn.do?projectId=xxxxxx for å se om prosjektet ligger der. Om det gjør det skal dere få all nødvendig informasjon fra den siden, om jeg ikke tar feil. Dersom denne siden ikke eksisterer kan dere se på de andre sidene. Jeg regner uansett med at dere får en god oversikt over html-filene jeg har lagt ved.
+
+ 
+
+Når det gjelder status og hvor ofte man skal sjekke er det fint om dere samler de forskjellige statusene dere finner og legger dem dynamisk inn på en side der vi kan spesifisere hvor ofte de skal sjekkes basert på status. Dersom vi har «Godkjenningsbrev sendt» trenger vi kun å sjekke dem en gang i blant, f.eks. hver tredje måned og 02.01.xx. Det bør vi kunne gjøre endringer på selv.
+
+ 
+
+Trenger du noe mer fra meg?
