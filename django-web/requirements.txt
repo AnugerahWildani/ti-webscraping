@@ -1,5 +1,5 @@
 beautifulsoup4==4.8.0  
-Django==2.2.4  
+Django==2.2.21  
 django-bootstrap4==1.0.1  
 django-template-debug==0.3.5  
 pip==19.2.3 
