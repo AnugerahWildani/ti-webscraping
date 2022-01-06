@@ -4,5 +4,5 @@ django-bootstrap4==1.0.1
 django-template-debug==0.3.5  
 pip==19.2.3 
 django-celery==3.3.1
-celery==4.3.0
+celery==5.2.2
 
